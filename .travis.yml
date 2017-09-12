@@ -27,6 +27,7 @@ install:
 
 script:
   - python runtests.py
+  - ./tests/check_bundled_js.sh
 #  - cd js_client && npm install --progress=false && npm test && cd ..
   - flake8
   - isort --check-only --recursive channels
